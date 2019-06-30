@@ -7,7 +7,6 @@ export function manageFriends(state, action){
       )
 
     case 'REMOVE_FRIEND':
-
       let index = state.friends.findIndex(friend => friend.id === action.id)
       return (
         {...state, friends: [
@@ -15,7 +14,6 @@ export function manageFriends(state, action){
         ]
       }
       )
-
     default:
       return state;
   }
